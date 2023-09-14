@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas Persegi</title>
+    <style>
+        .pedd .calculator-container, .persegi-container, .segitiga-container {
+            padding: auto;
+            border-radius: 20px;
+        }
+        .calculator-container {
+            background-color: crimson;
+            color: azure;
+            width: 500px;
+            padding: 50px;
+            margin: auto;
+            border: 3px solid gray;
+        }
+
+        .persegi-container {
+            background-color: royalblue;
+            color: azure;
+            width: 500px;
+            padding: 50px;
+            margin: auto;
+            border: 3px solid gray;
+        }
+        
+        .segitiga-container {
+            background-color: coral;
+            color: azure;
+            width: 500px;
+            padding: 50px;
+            margin: auto;
+            border: 3px solid gray;
+        }
+
+        button {
+            background-color: azure;
+            color: black;
+            border: none;
+            min-height: 50px;
+            min-width: 100px;
+            border-radius: 30px;
+        }
+
+        button:hover {
+            background-color: gray;
+            color: azure;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="pedd">
+    <div class="calculator-container">
+        <h1>BMI Calculator</h1>
+        <p>Height</p>
+        <input class="height-input-field" type="text">
+        <p>Weight</p>
+        <input class="weight-input-field" type="text"><br><br>
+        <button onclick="myFunction1()" class="Calculate1">Calculate</button>
+    </div><br><br>
+    <div class="persegi-container">
+        <h1>Luas Persegi</h1>
+        <p>Panjang</p>
+        <input class="panjang-input-field" type="text">
+        <p>Lebar</p>
+        <input class="lebar-input-field" type="text"><br><br>
+        <button onclick="myFunction2()" class="Calculate2">Calculate</button>
+    </div><br><br>
+    <div class="segitiga-container">
+        <h1>Luas Segitiga</h1>
+        <p>Alas</p>
+        <input class="alas-input-field" type="text">
+        <p>Tinggi</p>
+        <input class="tinggi-input-field" type="text"><br><br>
+        <button onclick="myFunction3()" class="Calculate3">Calculate</button>
+    </div>
+    </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
